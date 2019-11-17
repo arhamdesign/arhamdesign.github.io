@@ -1,0 +1,180 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jun 1, 2018, 3:32:57 PM
+    Author     : Magnet Brains
+*/
+
+li[id*="customize-control-traffica_options-social_icon"] select {
+font-family: "FontAwesome";
+float: right;
+width: 80px;
+}
+
+
+
+
+#customize-theme-controls .customize-pane-child.accordion-section-content {
+    padding: 12px;
+    margin-top: 120px;
+}
+#customize-theme-controls .customize-pane-child.accordion-section-content, #customize-theme-controls .customize-pane-child.accordion-sub-container {
+    display: block;
+    overflow-x: hidden;
+    margin-top: 120px;
+}
+
+.wp-core-ui .pro-btn, .wp-core-ui .button-secondary {
+    background: #18c73f;
+    border-color: #18c73f #18c73f #0a7d24;
+    box-shadow: 0 1px 0 #0a7d24;
+    color: #fff;
+    text-decoration: none;
+}
+
+#customize-controls .description h3>a {
+    font-size: 14px;
+    color: #ff4d4d;
+    font-weight: 600;
+}
+
+div.customize-section-description {
+    padding: 12px 10px;
+    background-color: white;
+    margin: 0 -12px;
+}
+
+/*Upgrade element css*/
+#customize-theme-controls li#accordion-section-Blog_and_Page_layout h3.accordion-section-title:after,
+#customize-theme-controls li#accordion-section-typography_section h3.accordion-section-title:after,
+#customize-theme-controls li#accordion-section-tracking_code_setting h3.accordion-section-title:after,
+#customize-theme-controls li#accordion-section-widget_area_section h3.accordion-section-title:after,
+#customize-theme-controls li#accordion-section-footer_section_copyright h3.accordion-section-title:after,
+#customize-theme-controls li#accordion-section-home_page_slider_3 h3.accordion-section-title:after,
+#customize-theme-controls li#accordion-section-home_page_slider_4 h3.accordion-section-title:after,
+#customize-theme-controls li#accordion-section-home_page_slider_5 h3.accordion-section-title:after,
+#customize-theme-controls li#accordion-section-home_page_slider_6 h3.accordion-section-title:after,
+#customize-theme-controls li#accordion-section-home_page_slider_control h3.accordion-section-title:after,
+#customize-theme-controls li#accordion-section-home_page_slider_speed h3.accordion-section-title:after,
+#customize-theme-controls li#accordion-section-traffica_social_icons h3.accordion-section-title:after,
+#customize-theme-controls li#accordion-panel-seo_options_panel h3.accordion-section-title:after,
+#customize-theme-controls li#accordion-section-home_page_column_structure h3.accordion-section-title:after,
+#customize-theme-controls li#accordion-section-home_feature_box h3.accordion-section-title:after,
+#customize-theme-controls li#accordion-panel-styling_options h3.accordion-section-title:after,
+#customize-theme-controls li#accordion-section-theme_stylesheet h3.accordion-section-title:after,
+#customize-theme-controls li#accordion-panel-home_about_area_panel h3.accordion-section-title:after,
+#customize-theme-controls li#accordion-section-call_feature_setting h3.accordion-section-title:after,
+#customize-theme-controls li#accordion-section-home_page_blog_number h3.accordion-section-title:after,
+#customize-theme-controls li#accordion-section-meta_keyword h3.accordion-section-title:after,
+#customize-theme-controls li#accordion-section-meta_desc h3.accordion-section-title:after,
+#customize-theme-controls li#accordion-section-meta_author_name h3.accordion-section-title:after,
+#customize-theme-controls li#accordion-section-home_page_aboutpost_onoff h3.accordion-section-title:after,
+#customize-theme-controls li#accordion-section-home_page_testimonial_onoff h3.accordion-section-title:after,
+#customize-theme-controls li#accordion-section-home_feature_bootom_left h3.accordion-section-title:after,
+#customize-theme-controls li#accordion-section-home_accordian_feature h3.accordion-section-title:after,
+#customize-theme-controls li#accordion-section-home_accordian_feature_settings h3.accordion-section-title:after,
+#customize-theme-controls li#accordion-section-home_testimonial_feature h3.accordion-section-title:after,
+#customize-theme-controls li#accordion-section-contact_page_map h3.accordion-section-title:after
+{
+    content: "\f315"!important;
+}
+
+
+
+/*
+*  Customizer Range Input control CSS
+*/
+input[type=range] {
+   /*removes default webkit styles*/
+   -webkit-appearance: none;
+
+   /*fix for FF unable to apply focus style bug */
+   border: none;
+
+   /*required for proper track sizing in FF*/
+   width: 90%;
+   padding: 0;
+   margin-top: 20px;
+}
+input[type=range]::-webkit-slider-runnable-track {
+   width: 100%;
+   height: 5px;
+   background: #ddd;
+   border: none;
+   border-radius: 3px;
+}
+input[type=range]::-webkit-slider-thumb {
+   -webkit-appearance: none;
+   border: none;
+   height: 18px;
+   width: 18px;
+   border-radius: 50%;
+   background: goldenrod;
+   margin-top: -7px;
+}
+input[type=range]:focus {
+   outline: none;
+}
+input[type=range]:focus::-webkit-slider-runnable-track {
+   background: #ccc;
+}
+
+input[type=range]::-moz-range-track {
+   width: 100%;
+   height: 5px;
+   background: #ddd;
+   border: none;
+   border-radius: 3px;
+}
+input[type=range]::-moz-range-thumb {
+   border: none;
+   height: 18px;
+   width: 18px;
+   border-radius: 50%;
+   background: goldenrod;
+}
+
+/*hide the outline behind the border*/
+input[type=range]:-moz-focusring{
+   outline: 1px solid white;
+   outline-offset: -1px;
+}
+
+input[type=range]::-ms-track {
+   width: 100%;
+   height: 5px;
+
+   /*remove bg colour from the track, we'll use ms-fill-lower and ms-fill-upper instead */
+   background: transparent;
+
+   /*leave room for the larger thumb to overflow with a transparent border */
+   border-color: transparent;
+   border-width: 6px 0;
+
+   /*remove default tick marks*/
+   color: transparent;
+}
+input[type=range]::-ms-fill-lower {
+   background: #777;
+   border-radius: 10px;
+}
+input[type=range]::-ms-fill-upper {
+   background: #ddd;
+   border-radius: 10px;
+}
+input[type=range]::-ms-thumb {
+   border: none;
+   height: 18px;
+   width: 18px;
+   border-radius: 50%;
+   background: goldenrod;
+}
+input[type=range]:focus::-ms-fill-lower {
+   background: #888;
+}
+input[type=range]:focus::-ms-fill-upper {
+   background: #ccc;
+}
